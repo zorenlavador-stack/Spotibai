@@ -1,24 +1,65 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import 'react-native-reanimated';
+import { Stack } from "expo-router";
+import { View, Image } from "react-native";
 
-import { useColorScheme } from '@/hooks/use-color-scheme';
-
-export const unstable_settings = {
-  anchor: '(tabs)',
-};
-
-export default function RootLayout() {
-  const colorScheme = useColorScheme();
-
+export default function Layout() {
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+    <Stack
+      screenOptions={{
+        headerShown: true,
+
+        header: () => (
+          <View
+            style={{
+              height: 200,
+              backgroundColor: "#F6F8FB",
+              paddingHorizontal: 12,
+              paddingTop: 10,
+              paddingBottom: 10,
+            }}
+          >
+            <View
+              style={{
+                flex: 1,
+                borderRadius: 20,
+                overflow: "hidden",
+                borderWidth: 2,
+                borderColor: "#1877ED",
+                backgroundColor: "#FFFFFF",
+                position: "relative",
+              }}
+            >
+              {/* GREEN BACKGROUND */}
+              <Image
+                source={require("../assets/images/greenbg.jpg")}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  position: "absolute",
+                }}
+                resizeMode="cover"
+              />
+
+              {/* LOGO ON TOP */}
+              <View
+                style={{
+                  flex: 1,
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <Image
+                  source={require("../assets/images/logo.png")}
+                  style={{
+                    width: 250,
+                    height: 250,
+                  }}
+                  resizeMode="contain"
+                />
+              </View>
+            </View>
+          </View>
+        ),
+      }}
+    />
   );
 }

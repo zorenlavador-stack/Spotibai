@@ -28,7 +28,7 @@ export default function Layout() {
                 position: "relative",
               }}
             >
-              {/* GREEN BACKGROUND */}
+       
               <Image
                 source={require("../assets/images/greenbg.jpg")}
                 style={{
@@ -39,7 +39,7 @@ export default function Layout() {
                 resizeMode="cover"
               />
 
-              {/* LOGO ON TOP */}
+            
               <View
                 style={{
                   flex: 1,

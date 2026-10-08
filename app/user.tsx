@@ -1,10 +1,10 @@
 import { router } from "expo-router";
 import { useState } from "react";
 import {
-  View,
+  Image,
   Text,
   TouchableOpacity,
-  Image,
+  View,
 } from "react-native";
 
 export default function User() {
@@ -80,7 +80,7 @@ export default function User() {
         >
 
           <Image
-            source={require("../assets/images/kenji.jpg")}
+            source={require("../assets/images/kenj.jpg")}
             style={{
               width: 100,
               height: 100,
@@ -98,7 +98,7 @@ export default function User() {
               textAlign: "center",
             }}
           >
-            Kenji Mata
+            Dyn Kenji Mata
           </Text>
 
           <Text
@@ -119,7 +119,7 @@ export default function User() {
               marginTop: 7,
             }}
           >
-            BSIT • 2nd Year
+            BSIT • 4th Year
           </Text>
 
         </TouchableOpacity>
@@ -150,7 +150,7 @@ export default function User() {
         >
 
           <Image
-            source={require("../assets/images/gabriel.jpg")}
+            source={require("../assets/images/manco.jpg")}
             style={{
               width: 100,
               height: 100,
@@ -168,7 +168,7 @@ export default function User() {
               textAlign: "center",
             }}
           >
-            Maria Santos
+            Gabriel Manco
           </Text>
 
           <Text
@@ -189,7 +189,7 @@ export default function User() {
               marginTop: 7,
             }}
           >
-            BSED • 2nd Year
+            BSED • 4th Year
           </Text>
 
         </TouchableOpacity>
@@ -250,7 +250,7 @@ export default function User() {
               textAlign: "center",
             }}
           >
-            John Reyes
+            Jurengel Lavador
           </Text>
 
           <Text
@@ -271,7 +271,7 @@ export default function User() {
               marginTop: 7,
             }}
           >
-            BSCS • 1st Year
+            BSCS • 4th Year
           </Text>
 
         </TouchableOpacity>
@@ -302,7 +302,7 @@ export default function User() {
         >
 
           <Image
-            source={require("../assets/images/kate.jpg")}
+            source={require("../assets/images/kitch.jpg")}
             style={{
               width: 100,
               height: 100,
@@ -320,7 +320,7 @@ export default function User() {
               textAlign: "center",
             }}
           >
-            Ana Cruz
+            Kate Franz Barina
           </Text>
 
           <Text
@@ -341,7 +341,7 @@ export default function User() {
               marginTop: 7,
             }}
           >
-            BSIT • 3rd Year
+            BSIT • 4th Year
           </Text>
 
         </TouchableOpacity>
@@ -371,7 +371,7 @@ export default function User() {
               marginBottom: 15,
             }}
           >
-            Kenji Mata
+            Dyn Kenji Mata
           </Text>
 
           <Text style={{ fontSize: 14 }}>
@@ -393,7 +393,7 @@ export default function User() {
               marginTop: 9,
             }}
           >
-            📖 Year Level: 2nd Year
+            📖 Year Level: 4th Year
           </Text>
 
           <Text
@@ -402,7 +402,7 @@ export default function User() {
               marginTop: 9,
             }}
           >
-            🏫 Section: A
+            🏫 Section: C
           </Text>
 
           <Text
@@ -411,7 +411,7 @@ export default function User() {
               marginTop: 9,
             }}
           >
-            📧 Email: kenji@email.com
+            📧 Email: dynkenji@email.com
           </Text>
 
         </View>
@@ -438,7 +438,7 @@ export default function User() {
               marginBottom: 15,
             }}
           >
-            Maria Santos
+            Gabriel Manco
           </Text>
 
           <Text style={{ fontSize: 14 }}>
@@ -451,7 +451,7 @@ export default function User() {
               marginTop: 9,
             }}
           >
-            📚 Course: BSED
+            📚 Course: BSIT
           </Text>
 
           <Text
@@ -460,7 +460,7 @@ export default function User() {
               marginTop: 9,
             }}
           >
-            📖 Year Level: 2nd Year
+            📖 Year Level: 4th Year
           </Text>
 
           <Text
@@ -469,7 +469,7 @@ export default function User() {
               marginTop: 9,
             }}
           >
-            🏫 Section: B
+            🏫 Section: C
           </Text>
 
           <Text
@@ -478,7 +478,7 @@ export default function User() {
               marginTop: 9,
             }}
           >
-            📧 Email: maria@email.com
+            📧 Email: gabrielmanco@email.com
           </Text>
 
         </View>
@@ -505,7 +505,7 @@ export default function User() {
               marginBottom: 15,
             }}
           >
-            John Reyes
+            Jurengel Lavador
           </Text>
 
           <Text style={{ fontSize: 14 }}>
@@ -518,7 +518,7 @@ export default function User() {
               marginTop: 9,
             }}
           >
-            📚 Course: BSCS
+            📚 Course: BSIT
           </Text>
 
           <Text
@@ -527,7 +527,7 @@ export default function User() {
               marginTop: 9,
             }}
           >
-            📖 Year Level: 1st Year
+            📖 Year Level: 4th Year
           </Text>
 
           <Text
@@ -545,7 +545,7 @@ export default function User() {
               marginTop: 9,
             }}
           >
-            📧 Email: john@email.com
+            📧 Email: jurengel@email.com
           </Text>
 
         </View>
@@ -572,7 +572,7 @@ export default function User() {
               marginBottom: 15,
             }}
           >
-            Ana Cruz
+            Kate Franz Barina
           </Text>
 
           <Text style={{ fontSize: 14 }}>
@@ -594,7 +594,7 @@ export default function User() {
               marginTop: 9,
             }}
           >
-            📖 Year Level: 3rd Year
+            📖 Year Level: 4th Year
           </Text>
 
           <Text
@@ -603,7 +603,7 @@ export default function User() {
               marginTop: 9,
             }}
           >
-            🏫 Section: A
+            🏫 Section: C
           </Text>
 
           <Text
@@ -612,7 +612,7 @@ export default function User() {
               marginTop: 9,
             }}
           >
-            📧 Email: ana@email.com
+            📧 Email: katefranz@email.com
           </Text>
 
         </View>

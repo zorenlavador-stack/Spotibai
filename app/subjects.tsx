@@ -1,5 +1,5 @@
 import { router } from "expo-router";
-import { View, Text, TouchableOpacity } from "react-native";
+import { Text, TouchableOpacity, View } from "react-native";
 
 export default function Subjects() {
   return (
@@ -59,7 +59,7 @@ export default function Subjects() {
           </Text>
 
           <Text style={{ fontSize: 9, color: "#668074", marginTop: 3 }}>
-            Teacher: Mrs. Santos
+            Teacher: Mr. John Kevin Enriquez
           </Text>
         </View>
 
@@ -93,7 +93,7 @@ export default function Subjects() {
           </Text>
 
           <Text style={{ fontSize: 9, color: "#668074", marginTop: 3 }}>
-            Teacher: Mr. Reyes
+            Teacher: Mr. Christorey Lato
           </Text>
         </View>
 
@@ -127,7 +127,7 @@ export default function Subjects() {
           </Text>
 
           <Text style={{ fontSize: 9, color: "#668074", marginTop: 3 }}>
-            Teacher: Ms. Garcia
+            Teacher: Ms. Jomar Lavador
           </Text>
         </View>
 
@@ -161,7 +161,7 @@ export default function Subjects() {
           </Text>
 
           <Text style={{ fontSize: 9, color: "#668074", marginTop: 3 }}>
-            Teacher: Mr. Dela Cruz
+            Teacher: Ms. Cathlyn Perez
           </Text>
         </View>
 
@@ -195,7 +195,7 @@ export default function Subjects() {
           </Text>
 
           <Text style={{ fontSize: 9, color: "#668074", marginTop: 3 }}>
-            Teacher: Mr. Dela Cruz
+            Teacher: Mr. Thadeus Cuizon
           </Text>
         </View>
 
@@ -229,7 +229,7 @@ export default function Subjects() {
           </Text>
 
           <Text style={{ fontSize: 9, color: "#668074", marginTop: 3 }}>
-            Teacher: Mr. Dela Cruz
+            Teacher: Mr. Herold Omecillo
           </Text>
         </View>
 

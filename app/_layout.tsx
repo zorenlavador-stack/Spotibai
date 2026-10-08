@@ -1,5 +1,5 @@
 import { Stack } from "expo-router";
-import { View, Image } from "react-native";
+import { Image, View } from "react-native";
 
 export default function Layout() {
   return (
@@ -8,13 +8,14 @@ export default function Layout() {
         headerShown: true,
 
         header: () => (
-          <View
+          <View 
             style={{
               height: 200,
               backgroundColor: "#F6F8FB",
               paddingHorizontal: 12,
               paddingTop: 10,
               paddingBottom: 10,
+              
             }}
           >
             <View
@@ -28,7 +29,7 @@ export default function Layout() {
                 position: "relative",
               }}
             >
-       
+             
               <Image
                 source={require("../assets/images/greenbg.jpg")}
                 style={{
@@ -39,7 +40,7 @@ export default function Layout() {
                 resizeMode="cover"
               />
 
-            
+             
               <View
                 style={{
                   flex: 1,

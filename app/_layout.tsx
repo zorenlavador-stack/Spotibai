@@ -5,7 +5,7 @@ import { Image, View } from "react-native";
 export default function Layout() {
   return React.createElement(Stack, {
     screenOptions: {
-      headerShown: true,
+      headerShown: false,
       header: () =>
         React.createElement(
           View,

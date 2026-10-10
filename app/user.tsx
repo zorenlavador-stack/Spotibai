@@ -80,7 +80,7 @@ export default function User() {
         >
 
           <Image
-            source={require("../assets/images/kenji.jpg")}
+            source={require("../assets/images/kenj.jpg")}
             style={{
               width: 100,
               height: 100,

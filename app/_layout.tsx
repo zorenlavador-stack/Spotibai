@@ -1,4 +1,3 @@
-import * as React from "react";
 import { Stack } from "expo-router";
 import { Image, View } from "react-native";
 import { Colors } from "../constants/colors";

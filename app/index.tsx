@@ -49,12 +49,13 @@ export default function Welcome() {
   // State for the users name and input focus
   const [name, setName] = useState("");
   const [isFocused, setIsFocused] = useState(false);
+  const [hint, setHint] = useState("");
 
   // useEffect run after the Welcome screen mounts
   useEffect(() => {
     console.log("SPOTIBAI Welcome screen mounted");
 
-    // runs when the screen component unmounts
+    // Cleanup function runs when the screen component unmounts
     return () => {
       console.log("SPOTIBAI Welcome screen unmounted");
     };
@@ -65,7 +66,23 @@ export default function Welcome() {
   const isWide = width >= 768;
 
   const trimmed = name.trim();
-  const isNameValid = trimmed.length > 0;
+  const isNameValid = trimmed.length >= 3;
+
+  // useEffect with a dependency array: runs again every time `trimmed` changes.
+  // It waits 600ms after the user stops typing, then checks the name.
+  useEffect(() => {
+    const timerId = setTimeout(() => {
+      setHint(
+        trimmed.length > 0 && trimmed.length < 3
+          ? "Please enter at least 3 characters."
+          : "",
+      );
+    }, 600);
+
+    // Cleanup: cancel the previous timer on the next keystroke,
+    // so the hint only appears after the user pauses.
+    return () => clearTimeout(timerId);
+  }, [trimmed]);
 
   // send the name to the dashboard as a route param
   const handleStart = () => {
@@ -150,6 +167,18 @@ export default function Welcome() {
           color: Colors.text,
         }}
       />
+
+      {/* Name validated hint */}
+      {hint ? (
+        <Text
+          accessibilityRole="alert"
+          style={{ color: "red", 
+            fontSize: 12, 
+            marginTop: 6 }}
+        >
+          {hint}
+        </Text>
+      ) : null}
 
       {/* Start Exploring button */}
       <TouchableOpacity
